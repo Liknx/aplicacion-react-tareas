@@ -12,12 +12,12 @@ function ListaDeTareas(){
       const tareasActualizadas = [tarea, ...tareas];
       setTareas(tareasActualizadas);
     }
-  }
+  };
 
   const eliminarTarea = id => {
     const tareasActualizadas = tareas.filter(tarea => tarea.id != id);
     setTareas(tareasActualizadas);
-  }
+  };
 
   const completarTarea = id => {
     const tareasActualizadas = tareas.map(tarea => {
@@ -27,7 +27,7 @@ function ListaDeTareas(){
       return tarea;
     });
     setTareas(tareasActualizadas);
-  }
+  };
 
   return(
     <>

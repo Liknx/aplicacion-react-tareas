@@ -7,7 +7,7 @@ function TareaFormulario(props){
 
   const manejarCambio = e => {
     setInput(e.target.value);
-  }
+  };
 
   const manejarEnvio = e => {
     e.preventDefault();
@@ -19,7 +19,7 @@ function TareaFormulario(props){
     }
 
     props.onSubmit(tareaNueva);
-  }
+  };
 
   return (
     <form 
@@ -38,6 +38,6 @@ function TareaFormulario(props){
       </button>
     </form>
   )
-}
+};
 
 export default TareaFormulario;
